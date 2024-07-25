@@ -2,19 +2,19 @@ functional:
   - The user must be able to register
   - The user must be able to log in/log out of the profile
   - An unregistered user should be able to play a test game
-  - A registered user should be able to see in the lobby players who are online, a list of active battles and chat
-  - A registered user must be able to write messages in the lobby chat and see messages
-  - A registered user must be able to enter the battle as a spectator or as a participant
+  - A registered user should be able to see list of players who are online, a list of active battles and leaderboard
+  - A registered user should be able to write messages in the chat and see messages
+  - A registered user should be able to enter the battle as a spectator or as a participant
   - A registered user should be able to create his own battle with a bot/real participant
   - A registered user should be able to see a list of upcoming and past tournaments, view information about them, join the upcoming
-  - A registered user must be able to create his own tournament
+  - A registered user should be able to create his own tournament
   - A registered user should be able to see the history of past games and view detailed information about them
   - Each user should have a profile page with player information, game history and statistics
   - Each user should be able to go into settings and change the name, preferred programming language, sound and volume of notifications
   - There should be a rating page for all players
   - There should be a page with all the tasks that can be encountered in battle
   - The game should have a tutorial that starts automatically when you first launch it
-  - The game should be able to see the enemy code
+  - The user should be able to see the rival code during the game
   - There should be an option to give up in the game
   - There should be an extension for Google Chrome that notifies about games and events on the site
   - It should be possible to view the game history
@@ -26,11 +26,11 @@ non-functional:
   - The site must be able to handle a large amount of traffic (from 1000 simultaneous users)
   - The code printed during the game should not disappear in conditions of an unstable Internet connection
 implicit:
-  - The game should be able to choose a programming language
-  - The game should be able to run the code
-  - Objectives in the game must be in Russian and English
+  - The player should be able to choose a programming language during the game
+  - The player should be able to run the code during the game
+  - Tasks in the game must be in Russian and English
   - The player should not be able to edit the opponent's code
   - There should be pagination on the player rating page
-  - When winning, the player’s rating increases, when losing, it decreases
+  - If the player wins, their rating goes up, while if they lose, it goes down
   - User data must be securely stored and protected from hacking
   - Registration fields must specify the necessary requirements for the entered data
