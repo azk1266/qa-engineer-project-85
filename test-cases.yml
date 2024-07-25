@@ -1,0 +1,79 @@
+---
+- summary: |
+    Successful registration via e-mail 
+  requirement: |
+    If login, email and same password are entered correctly, user should be registered. 
+  prerequisites: |
+    - Go to the project page https://codebattle.hexlet.io/
+    - Click on the "sign up" button
+  test-data: |
+    Nickname = Emsmq1 
+    Email = avte@iodf.com
+    Password = ps,2,sk
+    Password Confirmation = ps,2,sk
+  steps:
+    - Enter nickname
+    - Enter email
+    - Enter password
+    - Enter Password Confirmation
+    - Click the "Submit" button
+  expected-result: |
+    User should be registered and get to the main page.
+
+- summary: |
+    Unsuccessful registration due to missing data.
+  requirement: |
+    If fields are left blank on the registration page, registration will fail.
+  prerequisites: |
+    - Go to the project page https://codebattle.hexlet.io/
+    - Click on the "sign up" button
+  test-data: |
+  steps:
+    - Click on the "Submit" button
+  expected-result: |
+    Registration failed. There are prompts with input requirements under the fields
+
+- summary: |
+    Successful registration using Github 
+  requirement: |
+    Must be able to register through a Github account
+  prerequisites: |
+    - Go to the project page https://codebattle.hexlet.io/
+    - Click on the "sign up" button
+  test-data: |
+  steps:
+    - Click on the "sign in with github" button
+    - Sign in to an existing Github account
+  expected-result: |
+    The user must be logged in and get to the home page 
+
+- summary: |
+    Successful registration using Discord 
+  requirement: |
+    It must be possible to register through a Discord account.
+  prerequisites: |
+    - Go to the project page https://codebattle.hexlet.io/
+    - Click on the "sign up" button
+  test-data: |
+  steps:
+    - Click on the "sign in with Discord" button
+    - Sign in to an existing Discord account
+  expected-result: |
+    User should be logged in and get to the main page 
+
+- summary: |
+    Successful authorization via email 
+  requirement: |
+    Authorization takes place when correct data is entered.
+  prerequisites: |
+    - Go to the project page https://codebattle.hexlet.io/
+    - Click on the "sign in" button
+  test-data: |
+    Email = avte@iodf.com
+    Password = ps,2,sk
+  steps:
+    - Enter email
+    - Enter password
+    - Click on the “Submit” button
+  expected-result: |
+    User should be authorized and get to the main page 
