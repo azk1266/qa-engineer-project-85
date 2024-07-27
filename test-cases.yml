@@ -74,6 +74,29 @@
   steps:
     - Enter email
     - Enter password
-    - Click on the “Submit” button
+    - Click on the "Submit" button
   expected-result: |
     User should be authorized and get to the main page 
+
+- summary: |
+    Password reset function works correctly
+  requirement: |
+    There is a "forgot password" button on the login page. If you click on it, you will be redirected to a page where you need to enter your email address, 
+    to which a letter with a link to reset your password will be sent.  
+  prerequisites: |
+    - Go to the project page https://codebattle.hexlet.io/
+    - Click on the "sign in" button
+  test-data: |
+    Email = avte@iodf.com
+    Password = hvjs2kkka
+    Password Confirmation = hvjs2kkka
+  steps:
+    - Click on the "Forgot your password?" button
+    - Enter email
+    - Click on the "Submit" button
+    - Follow the link in the email you receive
+    - Enter Password
+    - Enter Password Confirmation
+    - Click the "Submit" button
+  expected-result: |
+    The link letter has been received in the email. Confirmation of password update received.
